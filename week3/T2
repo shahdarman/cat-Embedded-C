@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int x = 10;
+int y = 8;
+void swap ()
+{
+    int swap1;
+    swap1=x;
+    x=y;
+    y=swap1;
+
+}
+int main()
+{
+    printf("Before Swap %d , %d\n" , x , y);
+     swap();
+    printf("after Swap %d , %d\n" , x , y);
+
+    return 0;
+}
