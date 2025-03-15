@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+login(char name1[] , int pass1)
+{
+    char name [50];
+    int pass;
+    strcpy(name,"shahdarman");
+    pass=123456789;
+    if(strcpy(name1,name)&&pass1==pass)
+    {
+        printf("login successful\n");
+    }else
+    printf("Error");
+}
+int main()
+{
+
+
+    char name1 [50];
+    int pass1;
+    printf("pLease Enter Your Usename!\n");
+    scanf("%s",&name1);
+    printf("pLease Enter Your password!\n");
+    scanf("%d",&pass1);
+    login(name1, pass1);
+
+    return 0;
+}
